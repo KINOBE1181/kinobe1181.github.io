@@ -1,29 +1,559 @@
 
-<section id="contact">
-    <h2>Contact</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-    <p>
-        I am interested in opportunities involving
-        artificial intelligence, software engineering,
-        cybersecurity, and computer systems.
-        I welcome opportunities to connect with
-        researchers and professionals working in
-        these areas.
-    </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/KINOBE1181"
-           target="_blank"
-           rel="noopener noreferrer">
-            github.com/KINOBE1181
-        </a>
-    </p>
+    <meta name="description"
+          content="Computer Science Research Portfolio featuring
+          artificial intelligence, cybersecurity, database systems,
+          and parallel programming projects.">
 
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:RobKwiat9501@gmail.com">
-            RobKwiat9501@gmail.com
-        </a>
-    </p>
-</section>
+    <title>Computer Science Research Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101827;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #f1f5f9;
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #38bdf8;
+            outline-offset: 4px;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            margin-bottom: 35px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #101827;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .site-nav {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <!-- Navigation -->
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#future-work">Future Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- About Me -->
+
+    <section id="about">
+
+        <h1>Computer Science Research Portfolio</h1>
+
+        <p class="intro">
+            Graduate student exploring artificial intelligence,
+            cybersecurity, database systems, and distributed computing.
+        </p>
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a graduate student pursuing my Master's degree
+            in Computer Science at Rowan University. My interests
+            include artificial intelligence, cybersecurity,
+            database systems, and distributed computing.
+        </p>
+
+        <p>
+            Through my academic coursework and independent learning,
+            I have gained experience working with AI technologies,
+            database transactions, and parallel programming.
+            I am especially interested in understanding how complex
+            computer systems operate, how problems arise within them,
+            and how those systems can be made more reliable and secure.
+        </p>
+
+        <p>
+            My goal is to continue developing my technical skills
+            while preparing for opportunities in software engineering,
+            AI engineering, cybersecurity, and systems-related roles.
+        </p>
+
+    </section>
+
+
+    <!-- Selected Projects -->
+
+    <section id="projects">
+
+        <h2>Selected Projects</h2>
+
+        <!-- Project 1 -->
+
+        <div class="card">
+
+            <h3>Smart Course Search — AI Engineering</h3>
+
+            <p>
+                As part of my AI engineering studies, I developed
+                a Python-based semantic search application using
+                Ollama and Pinecone.
+            </p>
+
+            <p>
+                The application uses the nomic-embed-text model
+                to generate vector embeddings from course titles,
+                sections, and descriptions. These embeddings are
+                stored in a Pinecone vector database, allowing
+                users to search for relevant course information
+                based on meaning rather than exact keywords.
+            </p>
+
+            <p>
+                I implemented section-level searching and
+                similarity-based ranking, allowing the application
+                to return relevant course sections with
+                their descriptions and similarity scores.
+            </p>
+
+            <p>
+                I tested the application with sample course data
+                and successfully retrieved ranked results.
+                I also improved the program so it reuses an
+                existing Pinecone index instead of deleting
+                and recreating it every time the program runs.
+            </p>
+
+            <p>
+                This project helped me better understand
+                vector databases, embedding models,
+                semantic search, and how AI applications
+                retrieve relevant information.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Ollama, Pinecone, LangChain,
+                Vector Embeddings
+            </p>
+
+            <p>
+                <a href="https://github.com/KINOBE1181/smart-course-search"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project on GitHub
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="card">
+
+            <h3>Database Transactions and Concurrency Control</h3>
+
+            <p>
+                In my Transactional Cyber Systems coursework,
+                I explored how databases handle multiple
+                transactions while maintaining data consistency.
+            </p>
+
+            <p>
+                One assignment, "One Doctor Stays," involved
+                using SQLite to enforce a scheduling rule
+                requiring at least one doctor to remain on call.
+                I tested concurrent transactions using two
+                terminals and examined how database locking
+                affected the order of operations.
+            </p>
+
+            <p>
+                I used BEGIN IMMEDIATE, conditional UPDATE
+                statements, and transaction commits to prevent
+                both doctors from going off call. I also observed
+                how a transaction waiting for a lock reads
+                the updated database state after another
+                transaction commits.
+            </p>
+
+            <p>
+                This assignment helped me understand transaction
+                isolation, database locking, and how careful
+                transaction design prevents inconsistent data.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                SQLite, SQL, Linux, Transaction Management
+            </p>
+
+        </div>
+
+
+        <!-- Project 3 -->
+
+        <div class="card">
+
+            <h3>Parallel Programming and MPI Communication</h3>
+
+            <p>
+                Through my Parallel and Concurrent Systems
+                coursework, I studied how multiple processes
+                execute and communicate in parallel programs.
+            </p>
+
+            <p>
+                One MPI exercise focused on a C program
+                where non-main processes send short messages
+                to the main process. The main process identifies
+                the rank of the process that sent a particular
+                message.
+            </p>
+
+            <p>
+                The exercise introduced process ranks,
+                message passing, and communication between
+                independently executing processes.
+            </p>
+
+            <p>
+                It also helped me understand how parallel
+                programs coordinate information and why
+                communication between processes is important.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                C, MPI, Linux, Parallel Programming
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research Interests -->
+
+    <section id="research">
+
+        <h2>Research Interests</h2>
+
+        <p>
+            My research interests include artificial intelligence,
+            cybersecurity, database management, and distributed
+            computing. I am particularly interested in how these
+            technologies interact and how complex systems can
+            be made more reliable, secure, and efficient.
+        </p>
+
+        <p>
+            One area I am especially interested in is autonomous
+            artificial intelligence. As AI systems become capable
+            of using tools, writing code, and making decisions,
+            I want to better understand the risks and limitations
+            of allowing them to operate independently.
+        </p>
+
+        <div class="card">
+
+            <h3>Research Opinion Article</h3>
+
+            <p>
+                <strong>
+                    Can AI Agents Be Trusted to Operate
+                    Without Human Supervision?
+                </strong>
+            </p>
+
+            <p>
+                An examination of the benefits and risks of
+                autonomous AI agents, including reliability,
+                cybersecurity, software engineering, and
+                the importance of human oversight.
+            </p>
+
+            <p>
+                My central argument is that AI agents can
+                be valuable tools, but important decisions
+                should remain subject to meaningful human
+                oversight, testing, and security controls.
+            </p>
+
+            <a class="button" href="article.html">
+                Read My Research Article
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technical Skills -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <p>
+            My technical background combines graduate
+            coursework, independent AI engineering studies,
+            and practical programming projects.
+        </p>
+
+        <h3>Programming and Databases</h3>
+
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>SQLite</li>
+            <li>Database Transactions</li>
+        </ul>
+
+        <h3>Artificial Intelligence</h3>
+
+        <ul class="skills-list">
+            <li>Ollama</li>
+            <li>LangChain</li>
+            <li>Pinecone</li>
+            <li>Vector Databases</li>
+            <li>Semantic Search</li>
+            <li>Embedding Models</li>
+            <li>Retrieval-Augmented Generation</li>
+        </ul>
+
+        <h3>Systems and Development</h3>
+
+        <ul class="skills-list">
+            <li>Linux</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>MPI Concepts</li>
+            <li>Parallel Programming</li>
+            <li>Concurrency Control</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Future Work -->
+
+    <section id="future-work">
+
+        <h2>Future Work</h2>
+
+        <p>
+            I plan to continue expanding my portfolio
+            with more advanced projects in artificial
+            intelligence, cybersecurity, database systems,
+            and distributed computing.
+        </p>
+
+        <p>
+            My future goals include improving my AI
+            applications, exploring secure and reliable
+            autonomous systems, and developing more
+            substantial parallel and distributed
+            programming projects.
+        </p>
+
+        <p>
+            I also want to document the challenges,
+            design decisions, and lessons learned
+            from each project so that this portfolio
+            reflects my growth as a computer scientist.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            I am interested in opportunities involving
+            artificial intelligence, software engineering,
+            cybersecurity, and computer systems.
+            I welcome opportunities to connect with
+            researchers and professionals working in
+            these areas.
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/KINOBE1181"
+               target="_blank"
+               rel="noopener noreferrer">
+                github.com/KINOBE1181
+            </a>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:RobKwiat9501@gmail.com">
+                RobKwiat9501@gmail.com
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Computer Science Research Portfolio |
+            Rowan University | 2026
+        </p>
+
+    </footer>
+
+</main>
+
+</body>
+</html>
