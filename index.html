@@ -1,26 +1,16 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Computer Science Research Portfolio featuring
-          artificial intelligence, cybersecurity, database systems,
-          and parallel programming projects.">
 
     <title>Computer Science Research Portfolio</title>
 
     <style>
         * {
             box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
         }
 
         body {
@@ -35,24 +25,21 @@
         main {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 50px 30px;
+            padding: 60px 30px;
         }
 
         h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            line-height: 1.2;
         }
 
         h2 {
             color: #38bdf8;
-            margin-top: 45px;
-            margin-bottom: 20px;
+            margin-top: 40px;
         }
 
         h3 {
             color: #f1f5f9;
-            margin-top: 0;
         }
 
         p {
@@ -62,21 +49,15 @@
         a {
             color: #38bdf8;
             text-decoration: none;
-            overflow-wrap: anywhere;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
+        a:hover,
         a:focus-visible {
-            outline: 2px solid #38bdf8;
-            outline-offset: 4px;
+            text-decoration: underline;
         }
 
         .intro {
             font-size: 1.3rem;
-            color: #cbd5e1;
             margin-bottom: 35px;
         }
 
@@ -91,99 +72,39 @@
             margin-top: 0;
         }
 
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #38bdf8;
-            color: #101827;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .button:hover {
-            background-color: #7dd3fc;
-            text-decoration: none;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 0;
-            list-style: none;
-        }
-
-        .skills-list li {
+        .skills {
             background-color: #1e293b;
-            border: 1px solid #334155;
-            padding: 10px 15px;
-            border-radius: 8px;
-        }
-
-        .site-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            padding: 20px 0;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #334155;
+            padding: 25px;
+            border-radius: 10px;
         }
 
         footer {
             text-align: center;
             margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #334155;
             color: #94a3b8;
             font-size: 0.9rem;
         }
 
         @media (max-width: 600px) {
             main {
-                padding: 25px 20px;
+                padding: 30px 20px;
             }
 
             h1 {
                 font-size: 2rem;
             }
 
-            .intro {
-                font-size: 1.1rem;
-            }
-
             .card {
                 padding: 20px;
-            }
-
-            .site-nav {
-                gap: 12px;
             }
         }
     </style>
 </head>
 
 <body>
-
 <main>
 
-    <!-- Navigation -->
-
-    <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
-        <a href="#future-work">Future Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-
-    <!-- About Me -->
+    <!-- ABOUT ME -->
 
     <section id="about">
 
@@ -191,76 +112,100 @@
 
         <p class="intro">
             Graduate student exploring artificial intelligence,
-            cybersecurity, database systems, and distributed computing.
+            cybersecurity, database systems, and
+            distributed computing.
         </p>
 
         <h2>About Me</h2>
 
         <p>
-            I am a graduate student pursuing my Master's degree
-            in Computer Science at Rowan University. My interests
-            include artificial intelligence, cybersecurity,
-            database systems, and distributed computing.
+            I am a graduate student pursuing my Master's
+            degree in Computer Science at Rowan University.
+            My interests include artificial intelligence,
+            cybersecurity, database systems, and
+            distributed computing.
         </p>
 
         <p>
-            Through my academic coursework and independent learning,
-            I have gained experience working with AI technologies,
-            database transactions, and parallel programming.
-            I am especially interested in understanding how complex
-            computer systems operate, how problems arise within them,
-            and how those systems can be made more reliable and secure.
+            Through my academic coursework and independent
+            learning, I have gained experience working
+            with AI technologies, database transactions,
+            and parallel programming.
         </p>
 
         <p>
-            My goal is to continue developing my technical skills
-            while preparing for opportunities in software engineering,
-            AI engineering, cybersecurity, and systems-related roles.
+            I am especially interested in understanding
+            how complex computer systems operate,
+            how problems arise within them, and how
+            those systems can be made more reliable
+            and secure.
+        </p>
+
+        <p>
+            My goal is to continue developing my
+            technical skills while preparing for
+            opportunities in software engineering,
+            AI engineering, cybersecurity, and
+            systems-related roles.
         </p>
 
     </section>
 
 
-    <!-- Selected Projects -->
+    <!-- SELECTED PROJECTS -->
 
     <section id="projects">
 
         <h2>Selected Projects</h2>
 
-        <!-- Project 1 -->
+
+        <!-- PROJECT 1: SMART COURSE SEARCH -->
 
         <div class="card">
 
             <h3>Smart Course Search — AI Engineering</h3>
 
             <p>
-                As part of my AI engineering studies, I developed
-                a Python-based semantic search application using
-                Ollama and Pinecone.
+                As part of my AI engineering studies,
+                I developed a Python-based semantic
+                search application using Ollama
+                and Pinecone.
             </p>
 
             <p>
-                The application uses the nomic-embed-text model
-                to generate vector embeddings from course titles,
-                sections, and descriptions. These embeddings are
-                stored in a Pinecone vector database, allowing
-                users to search for relevant course information
-                based on meaning rather than exact keywords.
+                The application uses the
+                nomic-embed-text model to generate
+                vector embeddings from course titles,
+                sections, and descriptions.
             </p>
 
             <p>
-                I implemented section-level searching and
-                similarity-based ranking, allowing the application
-                to return relevant course sections with
-                their descriptions and similarity scores.
+                These embeddings are stored in a
+                Pinecone vector database, allowing
+                users to search for relevant course
+                information based on meaning rather
+                than exact keywords.
             </p>
 
             <p>
-                I tested the application with sample course data
-                and successfully retrieved ranked results.
-                I also improved the program so it reuses an
-                existing Pinecone index instead of deleting
-                and recreating it every time the program runs.
+                I implemented section-level searching
+                and similarity-based ranking, allowing
+                the application to return relevant
+                course sections with their descriptions
+                and similarity scores.
+            </p>
+
+            <p>
+                I tested the application with sample
+                course data and successfully retrieved
+                ranked results.
+            </p>
+
+            <p>
+                I also improved the program so it
+                reuses an existing Pinecone index
+                instead of deleting and recreating
+                it every time the program runs.
             </p>
 
             <p>
@@ -287,116 +232,243 @@
         </div>
 
 
-        <!-- Project 2 -->
+        <!-- PROJECT 2: DATABASE TRANSACTIONS -->
 
         <div class="card">
 
-            <h3>Database Transactions and Concurrency Control</h3>
+            <h3>
+                Database Transactions and
+                Concurrency Control
+            </h3>
 
             <p>
-                In my Transactional Cyber Systems coursework,
-                I explored how databases handle multiple
-                transactions while maintaining data consistency.
+                In my Transactional Cyber Systems
+                coursework, I explored how databases
+                handle multiple transactions while
+                maintaining data consistency.
             </p>
 
             <p>
-                One assignment, "One Doctor Stays," involved
-                using SQLite to enforce a scheduling rule
-                requiring at least one doctor to remain on call.
-                I tested concurrent transactions using two
-                terminals and examined how database locking
-                affected the order of operations.
+                One assignment, "One Doctor Stays,"
+                involved using SQLite to enforce
+                a scheduling rule requiring at least
+                one doctor to remain on call.
             </p>
 
             <p>
-                I used BEGIN IMMEDIATE, conditional UPDATE
-                statements, and transaction commits to prevent
-                both doctors from going off call. I also observed
-                how a transaction waiting for a lock reads
-                the updated database state after another
+                I tested concurrent transactions
+                using two terminals and examined
+                how database locking affected
+                the order of operations.
+            </p>
+
+            <p>
+                I used BEGIN IMMEDIATE, conditional
+                UPDATE statements, and transaction
+                commits to prevent both doctors
+                from going off call.
+            </p>
+
+            <p>
+                I also observed how a transaction
+                waiting for a lock reads the updated
+                database state after another
                 transaction commits.
             </p>
 
             <p>
-                This assignment helped me understand transaction
-                isolation, database locking, and how careful
-                transaction design prevents inconsistent data.
+                The assignment helped me understand
+                transaction isolation, two-phase
+                locking, and how careful transaction
+                design prevents inconsistent data.
             </p>
 
             <p>
                 <strong>Technologies:</strong>
-                SQLite, SQL, Linux, Transaction Management
+                SQLite, SQL, Linux,
+                Transaction Management
             </p>
 
         </div>
 
 
-        <!-- Project 3 -->
+        <!-- PROJECT 3: MPI FACTORIZATION -->
 
-      
-<div class="card">
-    <h3>MPI Parallel Factorization</h3>
+        <div class="card">
 
-    <p>
-        In my Parallel and Concurrent Programming coursework,
-        I developed a C program using MPI to distribute
-        integer factorization work across multiple processes.
-    </p>
+            <h3>MPI Parallel Factorization</h3>
 
-    <p>
-        The program processed 16,384 randomly generated
-        integers and included both a single-threaded
-        implementation and an MPI-based parallel implementation.
-    </p>
+            <p>
+                In my Parallel and Concurrent Programming
+                coursework, I developed a C program
+                that uses MPI to distribute integer
+                factorization work across multiple
+                processes.
+            </p>
 
-    <p>
-        I tested the program with 1, 2, 4, and 8 MPI
-        processes, comparing execution times and
-        verifying that both implementations
-        produced matching results.
-    </p>
+            <p>
+                The project involved processing
+                16,384 randomly generated integers
+                and comparing the performance of
+                a single-threaded implementation
+                against an MPI-based parallel
+                implementation.
+            </p>
 
-    <p>
-        Using eight MPI processes, I achieved
-        approximately 4.76x speedup compared
-        with the serial implementation.
-    </p>
+            <p>
+                I tested the program using 1, 2,
+                4, and 8 MPI processes and measured
+                the execution times of each run.
+            </p>
 
-    <p>
-        This project strengthened my understanding
-        of parallel computing, MPI communication,
-        performance benchmarking, and distributing
-        computational workloads.
-    </p>
+            <p>
+                I also verified that the serial
+                and parallel implementations
+                produced matching results.
+            </p>
 
-    <p>
-        <strong>Technologies:</strong>
-        C, MPI, Linux, Parallel Programming
-    </p>
-</div>
+            <p>
+                With eight MPI processes, the
+                program achieved approximately
+                4.76 times the performance
+                of the serial implementation.
+            </p>
+
+            <p>
+                This project helped me better
+                understand parallel computing,
+                process communication, performance
+                benchmarking, and the challenges
+                of distributing computational work.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                C, MPI, Linux,
+                Parallel Programming
+            </p>
+
+        </div>
 
 
+        <!-- PROJECT 4: TERRAFORM -->
 
-    <!-- Research Interests -->
+        <div class="card">
+
+            <h3>Terraform Infrastructure Automation</h3>
+
+            <p>
+                In my Advanced Software Engineering
+                coursework, I explored Terraform
+                and its role in infrastructure
+                automation.
+            </p>
+
+            <p>
+                For my final project, I prepared
+                a technical presentation explaining
+                Infrastructure as Code and how
+                Terraform can be used to define,
+                configure, and manage infrastructure.
+            </p>
+
+            <p>
+                I examined how Terraform configuration
+                files support repeatable deployments
+                and reduce the need for manual
+                infrastructure setup.
+            </p>
+
+            <p>
+                This project helped me better
+                understand infrastructure automation,
+                configuration management, and the
+                role of Infrastructure as Code
+                in modern software engineering.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Terraform, Infrastructure as Code,
+                Software Engineering
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <p>
+                <strong>Programming:</strong>
+                Python, C, SQL, SQLite
+            </p>
+
+            <p>
+                <strong>Artificial Intelligence:</strong>
+                Ollama, LangChain, Vector Embeddings,
+                Semantic Search, Retrieval-Augmented
+                Generation (RAG)
+            </p>
+
+            <p>
+                <strong>Databases:</strong>
+                SQLite, Pinecone, Chroma,
+                Transaction Management,
+                Concurrency Control
+            </p>
+
+            <p>
+                <strong>Systems and Computing:</strong>
+                Linux, MPI, Parallel Programming,
+                Distributed Computing Concepts
+            </p>
+
+            <p>
+                <strong>Development Tools:</strong>
+                Git, GitHub, Terraform,
+                VS Code, PyCharm
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESEARCH INTERESTS -->
 
     <section id="research">
 
         <h2>Research Interests</h2>
 
         <p>
-            My research interests include artificial intelligence,
-            cybersecurity, database management, and distributed
-            computing. I am particularly interested in how these
-            technologies interact and how complex systems can
-            be made more reliable, secure, and efficient.
+            My research interests include artificial
+            intelligence, cybersecurity, database
+            management, and distributed computing.
         </p>
 
         <p>
-            One area I am especially interested in is autonomous
-            artificial intelligence. As AI systems become capable
-            of using tools, writing code, and making decisions,
-            I want to better understand the risks and limitations
-            of allowing them to operate independently.
+            I am particularly interested in how
+            these technologies interact and how
+            complex systems can be made more
+            reliable, secure, and efficient.
+        </p>
+
+        <p>
+            One area I am especially interested
+            in is autonomous artificial intelligence.
+            As AI systems become capable of using
+            tools, writing code, and making decisions,
+            I want to better understand the risks
+            and limitations of allowing them
+            to operate independently.
         </p>
 
         <div class="card">
@@ -405,126 +477,72 @@
 
             <p>
                 <strong>
-                    Can AI Agents Be Trusted to Operate
-                    Without Human Supervision?
+                    Can AI Agents Be Trusted to
+                    Operate Without Human Supervision?
                 </strong>
             </p>
 
             <p>
-                An examination of the benefits and risks of
-                autonomous AI agents, including reliability,
-                cybersecurity, software engineering, and
-                the importance of human oversight.
+                An examination of the benefits and
+                risks of autonomous AI agents,
+                including reliability, cybersecurity,
+                software engineering, and the
+                importance of human oversight.
             </p>
 
             <p>
-                My central argument is that AI agents can
-                be valuable tools, but important decisions
-                should remain subject to meaningful human
-                oversight, testing, and security controls.
+                <a href="article.html">
+                    Read My Research Article
+                </a>
             </p>
-
-            <a class="button" href="article.html">
-                Read My Research Article
-            </a>
 
         </div>
 
     </section>
 
 
-    <!-- Technical Skills -->
-
-    <section id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <p>
-            My technical background combines graduate
-            coursework, independent AI engineering studies,
-            and practical programming projects.
-        </p>
-
-        <h3>Programming and Databases</h3>
-
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>C</li>
-            <li>SQL</li>
-            <li>SQLite</li>
-            <li>Database Transactions</li>
-        </ul>
-
-        <h3>Artificial Intelligence</h3>
-
-        <ul class="skills-list">
-            <li>Ollama</li>
-            <li>LangChain</li>
-            <li>Pinecone</li>
-            <li>Vector Databases</li>
-            <li>Semantic Search</li>
-            <li>Embedding Models</li>
-            <li>Retrieval-Augmented Generation</li>
-        </ul>
-
-        <h3>Systems and Development</h3>
-
-        <ul class="skills-list">
-            <li>Linux</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>MPI Concepts</li>
-            <li>Parallel Programming</li>
-            <li>Concurrency Control</li>
-        </ul>
-
-    </section>
-
-
-    <!-- Future Work -->
+    <!-- FUTURE WORK -->
 
     <section id="future-work">
 
         <h2>Future Work</h2>
 
         <p>
-            I plan to continue expanding my portfolio
-            with more advanced projects in artificial
-            intelligence, cybersecurity, database systems,
-            and distributed computing.
+            I plan to expand this portfolio with
+            additional projects involving database
+            transaction management, concurrency
+            control, distributed systems, and
+            artificial intelligence.
         </p>
 
         <p>
-            My future goals include improving my AI
-            applications, exploring secure and reliable
-            autonomous systems, and developing more
-            substantial parallel and distributed
-            programming projects.
-        </p>
-
-        <p>
-            I also want to document the challenges,
-            design decisions, and lessons learned
-            from each project so that this portfolio
-            reflects my growth as a computer scientist.
+            Future additions will include technical
+            explanations, project implementations,
+            and reflections on the challenges
+            encountered during development.
         </p>
 
     </section>
 
 
-    <!-- Contact -->
+    <!-- CONTACT -->
 
     <section id="contact">
 
         <h2>Contact</h2>
 
         <p>
-            I am interested in opportunities involving
-            artificial intelligence, software engineering,
-            cybersecurity, and computer systems.
-            I welcome opportunities to connect with
-            researchers and professionals working in
-            these areas.
+            I am interested in opportunities
+            involving software engineering,
+            artificial intelligence, cybersecurity,
+            and systems-related development.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:RobKwiat9501@gmail.com">
+                RobKwiat9501@gmail.com
+            </a>
         </p>
 
         <p>
@@ -536,28 +554,18 @@
             </a>
         </p>
 
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:RobKwiat9501@gmail.com">
-                RobKwiat9501@gmail.com
-            </a>
-        </p>
-
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer>
-
         <p>
-            Computer Science Research Portfolio |
-            Rowan University | 2026
+            Computer Science Research Portfolio
+            | Rowan University | 2026
         </p>
-
     </footer>
 
 </main>
-
 </body>
 </html>
